@@ -3,10 +3,10 @@ import "./Card.css";
 export default function Card({producto, clickeadoDatos}){
     return(
         <div className="contenidoCard">
-            {producto.map(objeto => {
+            {producto.map((objeto, index) => {
                 return(
                     <div 
-                        key={objeto}
+                        key={index}
                         className="contenedorCard" onClick={() =>{
                         clickeadoDatos(objeto);
                     }}>
@@ -20,6 +20,9 @@ export default function Card({producto, clickeadoDatos}){
                                 <p>${objeto.precio}</p>
                             </div>
                         </div>
+                        <div>
+                            <button type="button">Comprar</button>
+                        </div> 
                     </div>
                 );
             })}
