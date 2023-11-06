@@ -1,0 +1,33 @@
+div.contenidoCard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15%;
+    cursor: pointer;
+}
+
+div.contenedorCard{
+    background: #D9D9D9;
+    border: 3px solid var(--primary-bg-color);
+}
+
+div.imagen > img{
+    height: auto;
+    width: 100%;
+}
+
+div.texto > h2{
+    font-size: 150%;
+    text-align: left;
+}
+
+div.precio{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.precio > p{
+    font-size: 100%;
+    padding: 3% 0 6% 0;
+    display: flex;
+}
