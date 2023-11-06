@@ -54,3 +54,32 @@ div > button:hover{
     -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.35);
     transition: transform 0.3s ease, box-shadow 0.4s ease;
 }
+
+div.contenidoCompras{
+    display: inherit;
+    width: 100%;
+    background: var(--primary-bg-color);
+    border: 4px solid rgb(95, 177, 8);
+    border-radius: 5px;
+}
+
+div.contenedorCompras{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.imagenCompras > img{
+    width: 15vw;
+    height: auto;
+}
+
+div.textoCompras{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+div.textoCompras > h2{
+    font-weight: 500;
+    font-size: 2vw;
+}

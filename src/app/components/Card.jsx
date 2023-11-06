@@ -29,3 +29,26 @@ export default function Card({producto, clickeadoDatos}){
         </div>
     )
 }
+
+export function CardCompras({productos}){
+    return(
+        <div className="contenidoCompras">
+            {productos.map((objeto, index) => {
+                return(
+                    <div key={index} className="contenedorCompras">
+                        <div className="imagenCompras">
+                            <img src={objeto.src} />
+                        </div>
+                        <div className="textoCompras">
+                            <h2>{objeto.nombre}</h2>
+                            <div className="precioCompras">
+                                <p>{objeto.calzado}</p>
+                                <p>${objeto.precio}</p>
+                            </div>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    )
+}

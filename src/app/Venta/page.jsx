@@ -22,20 +22,20 @@ export default function Venta(){
         }).then((result) => {
             if(result.isConfirmed){
                 const existe = localStorage.getItem(objeto.nombre);
-                if(!existe){
-                    localStorage.setItem(objeto.nombre, JSON.stringify(objeto));
-                    setCarro(...data, objeto.nombre);
+                try{
+                    if(!existe || data !== undefined){
+                        localStorage.setItem(objeto.nombre, JSON.stringify(objeto));
+                        setCarro(...data, objeto.nombre);
+                    }
+                    else{
+                        Swal.fire({
+                            title: '¡Ya tiene el producto en el carrito!',
+                            showCloseButton: true
+                        })
+                    }
                 }
+                catch(err){}
             }
-        })
-    }
-
-    const carrito = () =>{
-        let arreglo = [{}];
-        carro.map(llave => {
-            const objeto = JSON.parse(localStorage.getItem(llave));
-            console.log(objeto);
-            arreglo.push(objeto);
         })
     }
 
@@ -55,7 +55,7 @@ export default function Venta(){
 
     return(
         <>
-            <Navbar carrito={carrito} /> 
+            <Navbar /> 
             <main>
                 <div className="filtros">
                     <h2>Filtros</h2>
