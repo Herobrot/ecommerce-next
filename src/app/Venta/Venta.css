@@ -1,0 +1,24 @@
+main{
+    padding-top: 10%;
+    display: flex;
+}
+
+main > .filtros{
+    width: 30%;
+    padding-inline: 5%;
+    border-right: 5px solid #8002FD;
+}
+
+main > .contenedorContenido{
+    width: 70%;
+    text-align: center;
+}
+
+.contenedorContenido > .cabeceraContenido{
+    text-align: center;
+    border-bottom: 5px solid #8002FD;
+}
+
+.contenedorContenido > .contenido{
+    padding: 5%;
+}
