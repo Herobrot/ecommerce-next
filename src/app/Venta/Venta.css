@@ -1,24 +1,83 @@
 main{
-    padding-top: 10%;
+    padding-top: 8%;
     display: flex;
+    background: var(--secondary-bg-color);
+    padding-bottom: 2%;
 }
 
 main > .filtros{
     width: 30%;
     padding-inline: 5%;
-    border-right: 5px solid #8002FD;
 }
 
 main > .contenedorContenido{
     width: 70%;
     text-align: center;
+    border-left: 5px solid #8002FD;;
 }
+
+.contenedorContenido > div{
+    font-size: 1.55vw;
+}
+
 
 .contenedorContenido > .cabeceraContenido{
     text-align: center;
-    border-bottom: 5px solid #8002FD;
+}
+
+.cabeceraContenido input[type="radio"]{
+    display: none;
+}
+
+.cabeceraContenido > .radiosButtons{
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 0 2% 0;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.radiosButtons > label{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(0,0,0);
+    font-size: 1.5vw;
+    width: 18%;
+    padding-block: 0.5%;
+    background: #ffff;
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
+}
+
+.radiosButtons > label:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
+}
+
+#radio1:checked ~ #label1{
+    background: #ffff00;
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
+}
+
+#radio2:checked ~ #label2{
+    background: #ffff00;
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
+}
+
+#radio3:checked ~ #label3{
+    background: #ffff00;
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
+}
+
+#radio4:checked ~ #label4{
+    background: #ffff00;
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
 }
 
 .contenedorContenido > .contenido{
+    width: 98%;
+    border-top: 5px solid #8002FD;
     padding: 5%;
 }

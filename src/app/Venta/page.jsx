@@ -87,23 +87,15 @@ export default function Venta(){
                 <div className="contenedorContenido">
                     <div className="cabeceraContenido">
                         <div>Catálogo de:</div>
-                        <div>
-                            <label>
-                            <input type="radio" name="radio" id="radio" />
-                                Primavera
-                            </label>
-                            <label>
-                            <input type="radio" name="radio" id="radio" />
-                                Verano
-                            </label>
-                            <label>
-                            <input type="radio" name="radio" id="radio" />
-                                Otoño
-                            </label>
-                            <label>
-                            <input type="radio" name="radio" id="radio" />
-                                Invierno
-                            </label>
+                        <div className="radiosButtons">
+                            <input type="radio" name="radio" id="radio1" />
+                            <label htmlFor="radio1" id="label1" >Primavera</label>
+                            <input type="radio" name="radio" id="radio2" />
+                            <label htmlFor="radio2" id="label2" >Verano</label>
+                            <input type="radio" name="radio" id="radio3" />
+                            <label htmlFor="radio3" id="label3" >Otoño</label>
+                            <input type="radio" name="radio" id="radio4" />
+                            <label htmlFor="radio4" id="label4" >Invierno</label>
                         </div>
                     </div>
                     <div className="contenido">
