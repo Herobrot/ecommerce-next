@@ -32,6 +32,7 @@ nav > .logoContenedor{
 .logoContenedor > h5{
     color: antiquewhite;
     font-weight: 500;
+    font-size: 90%;
 }
 
 div.buscador{
@@ -49,6 +50,7 @@ div.buscador > div.filtros{
 
 div.filtros > a{
     font-weight: 300;
+    font-size: 100%;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -124,12 +126,14 @@ div.usuario > svg:active{
 }
 
 div.usuario > button{
+    width: 60%;
     border-radius: 50px;
     border: 0;
     padding: 1% 3%;
     background: var(--secondary-bg-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    font-size: 90%;
 }
 
 div.usuario > button:hover{
